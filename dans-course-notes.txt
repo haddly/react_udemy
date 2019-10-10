@@ -1,0 +1,11 @@
+RANDOM SET OF NOTES TO REMEMBER DURING COURSE
+
+single curly braces is the JSX syntax to refer to a javascript variable
+ (e.g. function, string, etc.) and not a JS object.
+
+ What JS variabls can be referenced:
+ strings, numbers, arrays:
+ array example : const arr = ["hi", "there"]  --> this will be concatenated to "hi there"
+ BUT: if you use a JS object = {} --> this may deliver error. 
+ e.g. const obj = {text: "Click me"}; --> this will deliver an error. 
+ solution: when referencing the JS variable --> use object notation: {obj.text} and not simply {obj}
