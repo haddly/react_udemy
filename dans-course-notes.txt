@@ -4,8 +4,25 @@ single curly braces is the JSX syntax to refer to a javascript variable
  (e.g. function, string, etc.) and not a JS object.
 
  What JS variabls can be referenced:
- strings, numbers, arrays:
+ strings, numbers, arrays etc.:
  array example : const arr = ["hi", "there"]  --> this will be concatenated to "hi there"
  BUT: if you use a JS object = {} --> this may deliver error. 
  e.g. const obj = {text: "Click me"}; --> this will deliver an error. 
  solution: when referencing the JS variable --> use object notation: {obj.text} and not simply {obj}
+
+ CONSOLE:
+ check console when running react sometimes, as some errors will not crash the app but will appear there. 
+
+
+ 3 Tenets of react components
+ Component nesting: a component can be shown inside of another
+ Component reusability: We want to make components that can be easily reused throughout application
+ Component configuration: We should be able to configure a component when its created
+
+CSS: instead of styling ourselves, instead using a css file from the website: https://semantic-ui.com/ which is one big css file. 
+to link this directly to our project, just go to https://cdnjs.com/libraries/semantic-ui and get the URL which is: https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
+and link this in the index.html file which can be found in the "public" folder. 
+
+ 
+
+
