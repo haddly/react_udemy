@@ -22,6 +22,30 @@ single curly braces is the JSX syntax to refer to a javascript variable
 CSS: instead of styling ourselves, instead using a css file from the website: https://semantic-ui.com/ which is one big css file. 
 to link this directly to our project, just go to https://cdnjs.com/libraries/semantic-ui and get the URL which is: https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css
 and link this in the index.html file which can be found in the "public" folder. 
+NOTE: on semantic-ui.com you can also check the html to see how to layout the JSX while referencing the particular css classes. Click on the {} symbol. 
+
+
+LIBRARY: used alot in react course throughout. Is advised to use this in my own app aswell when i need some fake data for my projects.https://github.com/marak/Faker.js/
+here there is a list of fake data (under "API Methods"): e.g. fake addresses, fake companies, fake finance data, fake images.
+to use this library for e.g. fake image:avatar:
+ in terminal: npm install --save faker   (--save: means to save it to the local project)  --> note, as it is quite big, not advisable to use in an actual project.
+  Then to use this library once the above npm install is done, add to the top of the .js file: import faker  from "faker"; 
+  then --> inside "img" tag: src={faker.image.avatar()} (as it is in the list on github) vsc gives here the autocomplete options. Basically, this is being called as a function
+  
+  
+  
+When creating a new component. capitalize all words: e.g. CommentDetail
+make it available for import into other components by adding (at the end of the file): export default CommentDetail
+when importing it to other components: import CommentDetail from './CommentDetail' (as this is in the same folder) (also, no need to add the ".js" to the end as long as its  a JS file
+
+PROPS
+A system for passing data from a parent component to a child component -->
+Goal is to customize or configure a child component.
+Basically its about having a parent (App) customizing how a child e.g. (CommentDetail) looks/behaves.
+a child cannot parse data to parent using props. 
+
+
+
 
  
 
